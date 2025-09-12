@@ -19,21 +19,21 @@ public class SumProductAverage
 {
     public static void main(String[] args)
     {
-        double x, y, z, numruns, i;
+        double x, y, z, a, b, numruns, i;
         Scanner scan = new Scanner(System.in);
-        System.out.println("How many numbers? ");
+        System.out.println("How many runs? ");
         numruns = scan.nextInt();
-        y = 0.0;
-        z = 1.0;
-        System.out.println("Enter 3 number ");
         for(i = 0.0; i < numruns; i++)
         {
+            System.out.println("\nEnter 3 numbers ");
             x = scan.nextDouble();
-            y = y + x;
-            z = z * x;
+            a = scan.nextDouble();
+            b = scan.nextDouble();
+            y = x + a + b;
+            z = x * a * b;
+            System.out.println("\nThe sum is " + y);
+            System.out.println("\nThe average is " + y/numruns);
+            System.out.println("\nThe product is " + z);
         }
-        System.out.println("\nThe sum is " + y);
-        System.out.println("\nThe average is " + y/numruns);
-        System.out.println("\nThe product is " + z);
     }
 }
