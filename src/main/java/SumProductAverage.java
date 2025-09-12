@@ -25,9 +25,9 @@ public class SumProductAverage
         numruns = scan.nextInt();
         y = 0.0;
         z = 1.0;
+        System.out.println("Enter 3 number ");
         for(i = 0.0; i < numruns; i++)
         {
-            System.out.println("Enter a number ");
             x = scan.nextDouble();
             y = y + x;
             z = z * x;
