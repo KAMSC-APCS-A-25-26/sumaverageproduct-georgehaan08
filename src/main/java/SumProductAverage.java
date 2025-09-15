@@ -32,7 +32,7 @@ public class SumProductAverage
             y = x + a + b;
             z = x * a * b;
             System.out.println("\nThe sum is " + y);
-            System.out.println("\nThe average is " + y/numruns);
+            System.out.println("\nThe average is " + y/3);
             System.out.println("\nThe product is " + z);
         }
     }
