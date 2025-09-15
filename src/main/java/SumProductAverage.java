@@ -15,8 +15,25 @@
 
 import java.util.Scanner;
 
-public class SumProductAverage {
-    public static void main(String[] args) {
-        // TODO
+public class SumProductAverage
+{
+    public static void main(String[] args)
+    {
+        double x, y, z, a, b, numruns, i;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many runs? ");
+        numruns = scan.nextInt();
+        for(i = 0.0; i < numruns; i++)
+        {
+            System.out.println("\nEnter 3 numbers ");
+            x = scan.nextDouble();
+            a = scan.nextDouble();
+            b = scan.nextDouble();
+            y = x + a + b;
+            z = x * a * b;
+            System.out.println("\nThe sum is " + y);
+            System.out.println("\nThe average is " + y/3);
+            System.out.println("\nThe product is " + z);
+        }
     }
 }
